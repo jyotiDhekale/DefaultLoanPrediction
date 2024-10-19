@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e4e6e9, #a5a6da);
+    font-family: Arial, sans-serif;
+}
+.form-container {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+label {
+    margin-top: 10px;
+    display: block;
+    color: #555;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #d2c3e2; /* Focus color */
+    outline: none; /* Remove outline */
+}
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}

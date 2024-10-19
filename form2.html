@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction Form - Step 2</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Loan Prediction Input Form - Step 3</h1>
+        <form id="step2-form" action="/submit" method="POST">
+            <label for="dti">Debt-to-Income Ratio:</label>
+            <input type="number" id="dti" name="dti" required>
+
+            <label for="purpose">Purpose:</label>
+            <select id="purpose" name="purpose" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="debt_consolidation">Debt Consolidation</option>
+                <option value="home_improvement">Home Improvement</option>
+                <option value="other">Other</option>
+                <option value="small_business">Small Business</option>
+                <option value="vacation">Vacation</option>
+                <option value="wedding">Wedding</option>
+            </select>
+
+            <label for="term">Loan Term:</label>
+            <select id="term" name="term" required>
+                <option value="36 months">36 Months</option>
+                <option value="60 months">60 Months</option>
+            </select>
+
+            <label for="last_delinq_none">Last Delinquency None:</label>
+            <input type="number" id="last_delinq_none" name="last_delinq_none" required>
+
+            <label for="last_major_derog_none">Last Major Derogatory None:</label>
+            <input type="number" id="last_major_derog_none" name="last_major_derog_none" required>
+
+            <label for="revol_util">Revolving Utilization:</label>
+            <input type="number" id="revol_util" name="revol_util" required>
+
+            <label for="total_rec_late_fee">Total Record Late Fee:</label>
+            <input type="number" id="total_rec_late_fee" name="total_rec_late_fee" required>
+
+            <label for="od_ratio">Overdraft Ratio:</label>
+            <input type="number" id="od_ratio" name="od_ratio" required>
+
+            
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        // Populate the second form with data from localStorage
+        document.addEventListener('DOMContentLoaded', () => {
+            const loanData = JSON.parse(localStorage.getItem('loanData'));
+            if (loanData) {
+                document.getElementById('dti').value = loanData.dti || '';
+                document.getElementById('purpose').value = loanData.purpose || '';
+                document.getElementById('term').value = loanData.term || '';
+                document.getElementById('last_delinq_none').value = loanData.last_delinq_none || '';
+                document.getElementById('last_major_derog_none').value = loanData.last_major_derog_none || '';
+                document.getElementById('revol_util').value = loanData.revol_util || '';
+                document.getElementById('total_rec_late_fee').value = loanData.total_rec_late_fee || '';
+                document.getElementById('od_ratio').value = loanData.od_ratio || '';
+               
+            }
+        });
+    </script>
+</body>
+</html>

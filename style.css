@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Ensure the body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Video Background Styling */
+#background_ved {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    position: absolute; /* Fix the video to the background */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Make sure it is behind the content */
+    object-fit: cover; /* Ensure the video covers the screen without stretching */
+}
+
+#logo
+{
+    position: fixed;
+    left: 5%;
+    top:5%;
+    color: rgb(255, 215, 0);
+    font-size: 20px;
+
+}
+
+header {
+    background-color: transparent; /* Fully transparent */
+    color: #fff;
+    padding: 10px;
+    position: fixed; /* Fix the position of the header */
+    top: 0; /* Stick it to the top of the page */
+    left: 50%; /* Move the left edge of the header to the center */
+    transform: translateX(-50%); /* Center the header by moving it back by 50% of its width */
+    text-align: center; /* Center the text */
+    width: 100%; /* Optionally set the width to the full screen if needed */
+}
+
+
+#sogan {
+    position: absolute; /* Positioning context */
+    top: 110%; /* Adjust as needed to place the element vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: black; /* Text color */
+    padding: 5px; /* Optional padding for better spacing */
+    text-align: center; /* Center the text */
+    z-index: 1; /* Ensure it's above other content */
+    width: 800px;
+    font-size: 40px;
+    
+}
+
+#statement1 {
+    position: absolute; /* Positioning context */
+    top: 40%; /* Adjust as needed to place the element vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* Text color */
+    padding: 5px; /* Optional padding for better spacing */
+    text-align: center; /* Center the text */
+    z-index: 1; /* Ensure it's above other content */
+    width: 1000px;
+    font-size: 50px;
+    
+}
+
+
+
+/* Style for the contact box */
+#contact-box {
+    width: 150px; /* Set the width of the box */
+    height: 50px; /* Set the height of the box */
+    background-color: rgb(212, 182, 80); /* Yellow background */
+    color: black; /* Text color */
+    position: fixed; /* Fix it to the page */
+    top: 10%; /* Vertically center the box */
+    right: 5%; /* Align it to the right side */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    display: flex; /* Use flexbox for centering text */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 20px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 10px 10px 10px 10px; /* Add rounded corners on the left */
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    cursor: pointer;
+}
+
+#context
+{
+    color: rgb(17, 17, 70);
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.start-button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #FFD700; /* Gold button */
+    color: #111146; /* Dark blue text */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #111146; /* Dark blue border */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 80%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust both X and Y axis centering */
+    z-index: 10; /* Ensure button is on top */
+}
+
+
+#start_sentence {
+    position: absolute;
+    top: 65%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust both X and Y axis centering */
+    color: #ecde5c; /* Text color */
+    font-size: 20px; /* Text size */
+}
+
+
+.start-button:hover {
+    background-color: #a8983c; /* Slightly darker gold on hover */
+ 
+}
+
+#contact-box:hover{
+    background-color: #a8983c;
+}

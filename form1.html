@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction Form - Step 1</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+
+    <style>
+
+        #next
+        {
+            background-color: rgb(138, 139, 150);
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Loan Prediction Input Form - Step 2</h1>
+        <form id="step1-form">
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" required>
+
+            <label for="annual_inc">Annual Income:</label>
+            <input type="number" id="annual_inc" name="annual_inc" required>
+
+            <label for="short_emp">Short Employment:</label>
+            <input type="number" id="short_emp" name="short_emp" required>
+
+            <label for="emp_length_num">Employment Length (in years):</label>
+            <input type="number" id="emp_length_num" name="emp_length_num" required>
+
+            <label for="home_ownership">Home Ownership:</label>
+            <select id="home_ownership" name="home_ownership" required>
+                <option value="RENT">Rent</option>
+                <option value="OWN">Own</option>
+                <option value="MORTGAGE">Mortgage</option>
+                <option value="OTHER">Other</option>
+            </select>
+
+            <input type="button" value="Next" onclick="submitStep1()" id="next">
+        </form>
+    </div>
+
+    <script>
+        function submitStep1() {
+            // Collect form data
+            const formData = new FormData(document.getElementById('step1-form'));
+            const data = Object.fromEntries(formData.entries());
+
+            // Store data in localStorage
+            localStorage.setItem('loanData', JSON.stringify(data));
+
+            // Redirect to the second form
+            window.location.href = 'form2.html';
+        }
+    </script>
+</body>
+</html>
