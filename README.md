@@ -38,10 +38,6 @@ BAD: 1 = Client defaulted on loan, 0 = loan repaid
 
 ● CLAGE: Age of the oldest credit line in months
 
-● NINQ: Number of recent credit inquiries
-
-● CLNO: Number of existing credit lines
-
 ● DEBTINC: Debt-to-income ratio (all monthly debt payments divided by gross monthly income. This number is one of the ways lenders measure a borrower’s ability to manage the monthly payments to repay the money they plan to borrow)
 
 Final results
