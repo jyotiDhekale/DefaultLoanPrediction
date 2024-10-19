@@ -46,6 +46,6 @@ BAD: 1 = Client defaulted on loan, 0 = loan repaid
 
 Final results
 
-To solve this project I built 3 machine learning models: logistic regression, decision tree and random forest (baseline and tuned versions). The best performance was obtained by the tuned Randomforest model: 0.86 accuracy, 0.74 recall and 0.62 precision.
+To solve this project I built 3 machine learning models: logistic regression, decision tree and random forest (baseline and tuned versions). The best performance was obtained by the tuned Randomforest model: 0.80 accuracy, 0.74 recall and 0.80 precision.
 
 I chose this model due to its high interpretability and high recall that minimizes defaulters.
